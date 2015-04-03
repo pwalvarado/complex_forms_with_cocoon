@@ -7,7 +7,7 @@ class Recipe < ActiveRecord::Base
            :through => :quantities
   
   accepts_nested_attributes_for :quantities, 
-           :reject_if => :all_blank, 
+           :reject_if => proc { |attributes| attributes.any? {|k,v| v.blank?} }, 
            :allow_destroy => true
   accepts_nested_attributes_for :ingredients
 end
