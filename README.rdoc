@@ -31,6 +31,9 @@ Things you may want to cover:
     rails s -p XXXX
     visit http:/localhost:XXXX/recipes
 
+Follow process trough commits
+
 == References:
-https://hackhands.com/building-has_many-model-relationship-form-cocoon/
-https://github.com/nathanvda/cocoon_simple_form_demo
+
+* https://hackhands.com/building-has_many-model-relationship-form-cocoon/
+* https://github.com/nathanvda/cocoon_simple_form_demo
