@@ -8,6 +8,7 @@ gem 'therubyracer'
 gem 'sass-rails'
 gem 'coffee-script'
 gem 'uglifier'
+gem 'turbolinks'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
