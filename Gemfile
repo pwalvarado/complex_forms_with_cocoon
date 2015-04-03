@@ -1,38 +1,23 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-gem 'rails', '3.2.16'
+gem 'rails', '4.2.1'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'therubyracer'
 
-gem 'sqlite3'
+# Asset template engines
+gem 'sass-rails'
+gem 'coffee-script'
+gem 'uglifier'
 
+gem 'sqlite3-ruby', :require => 'sqlite3'
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+gem 'cocoon'
 
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
-end
+# use master version of simple-form for twitter-bootstrap integration
+#gem 'simple_form', '~> 3.1.0rc'
 
 gem 'jquery-rails'
+gem 'bootstrap-sass'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
+#gem "slim"
+#gem "slim-rails", :require => false
