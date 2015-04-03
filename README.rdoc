@@ -1,28 +1,36 @@
-== README
+== Building a has_many, through model relationship and form with Cocoon
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This example is about setting up a Recipe book. Recipes have multiple meta properties like their title, a brief description, instructions and the like. Each recipe of course needs ingredients and each ingredient needs quantities of that ingredient for the recipe. What we will be setting up is a relationship of Recipes to Ingredients through Quantities.
+
+
+A recipe :has_many tags :through quantities. You can add ingredients dinamically in the recipe form. When unlinking an ingredient, it is not deleted, only the link.
 
 Things you may want to cover:
 
-* Ruby version
+* Implementation in Rails 3 and 4. See branch rails 3.2.16
 
-* System dependencies
+* Using Cocoon gem
 
-* Configuration
+* Use of Twitter bootstrap
 
-* Database creation
+* Setting up models
 
-* Database initialization
+* Creating join relationships
 
-* How to run the test suite
+* Setting up the form code: nested form and partial
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Voila!
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+== Usage
+
+    git clone
+    cd complex_forms_wtih_cocoon
+    bundle install
+    rake db:migrate
+    rails s -p XXXX
+    visit http:/localhost:XXXX/recipes
+
+== References:
+https://hackhands.com/building-has_many-model-relationship-form-cocoon/
+https://github.com/nathanvda/cocoon_simple_form_demo
