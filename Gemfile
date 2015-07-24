@@ -20,5 +20,5 @@ gem 'cocoon'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 
-#gem "slim"
+gem 'haml'
 #gem "slim-rails", :require => false
