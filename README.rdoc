@@ -33,6 +33,12 @@ Things you may want to cover:
 
 Follow process trough commits
 
+== Template engines
+
+* *ERB* at branch master
+* *SLIM* at branch slim_version
+* *HAML* at branch haml_version
+
 == References:
 
 * https://hackhands.com/building-has_many-model-relationship-form-cocoon/
