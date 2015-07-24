@@ -1,7 +1,7 @@
-%p#notice= notice
-%p
-  %strong Name:
+p#notice= notice
+p
+  strong Name:
   = @ingredient.name
 = link_to 'Edit', edit_ingredient_path(@ingredient)
-|
+| \
 = link_to 'Back', ingredients_path

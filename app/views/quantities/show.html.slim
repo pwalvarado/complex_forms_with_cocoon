@@ -1,13 +1,13 @@
-%p#notice= notice
-%p
-  %strong Amount:
+p#notice= notice
+p
+  strong Amount:
   = @quantity.amount
-%p
-  %strong Recipe:
+p
+  strong Recipe:
   = @quantity.recipe
-%p
-  %strong Ingredient:
+p
+  strong Ingredient:
   = @quantity.ingredient
 = link_to 'Edit', edit_quantity_path(@quantity)
-|
+| \
 = link_to 'Back', quantities_path

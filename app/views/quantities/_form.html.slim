@@ -1,23 +1,23 @@
 = form_for(@quantity) do |f|
   - if @quantity.errors.any?
     #error_explanation
-      %h2
+      h2
         = pluralize(@quantity.errors.count, "error")
-        prohibited this quantity from being saved:
-      %ul
+        | prohibited this quantity from being saved:
+      ul
         - @quantity.errors.full_messages.each do |message|
-          %li= message
+          li= message
   .field
     = f.label :amount
-    %br/
+    br/
     = f.text_field :amount
   .field
     = f.label :recipe_id
-    %br/
+    br/
     = f.text_field :recipe_id
   .field
     = f.label :ingredient_id
-    %br/
+    br/
     = f.text_field :ingredient_id
   .actions
     = f.submit
